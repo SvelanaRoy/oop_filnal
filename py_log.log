@@ -1,0 +1,26 @@
+INFO:root:start backuping!
+INFO:root:start backuping!
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.vk.ru:443
+DEBUG:urllib3.connectionpool:https://api.vk.ru:443 "GET /method/photos.get?access_token=vk1.a.8eWXyieCrwXjyWd6kAYwYD39AORKLKV-XY_CEa0KjWuUPycK2rfOZO6GBiXz0Dli_0kiIScD38xslJqJ8C7N7Fio09vxhZuOJL0VMBK9P23BQ_0X8iK9OaborUkYvfHuzy0HKTsauioy-wzT6FgXcJWZr3XOFnjqbrVwH8DYu0AngXkVeaDKGJ0Kq0R4aFT8&owner_id=2160858&album_id=profile&extended=1&photo_sizes=1&v=5.199 HTTP/1.1" 200 1259
+DEBUG:root:get photoes from vk
+DEBUG:root:загрузка 3 фото
+DEBUG:root:фото для бэкапа {'7.jpg': {'photo_url': 'https://sun9-26.vkuserphoto.ru/impf/uHLfLvEuSn8hHNNUd5POC9bKgIzFa0kQuzIdJg/sZj56Axq8Rs.jpg?size=1280x719&quality=96&sign=4eae34eeff6d11e4b5bcfe2018b997ad&c_uniq_tag=MoEm93kYnE77uE8VmeaCwvpeR9DRVNG7w-y7LXrKfPs&type=album', 'photo_type': 'z'}, '24.jpg': {'photo_url': 'https://sun9-50.vkuserphoto.ru/c11265/u2160858/-6/z_53a71f34.jpg', 'photo_type': 'z'}}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cloud-api.yandex.net:443
+DEBUG:urllib3.connectionpool:https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=Image16 HTTP/1.1" 401 99
+ERROR:root:not created folder {'message': 'Не авторизован.', 'description': 'Unauthorized', 'error': 'UnauthorizedError'}
+INFO:root:start backuping!
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.vk.ru:443
+DEBUG:urllib3.connectionpool:https://api.vk.ru:443 "GET /method/photos.get?access_token=vk1.a.8eWXyieCrwXjyWd6kAYwYD39AORKLKV-XY_CEa0KjWuUPycK2rfOZO6GBiXz0Dli_0kiIScD38xslJqJ8C7N7Fio09vxhZuOJL0VMBK9P23BQ_0X8iK9OaborUkYvfHuzy0HKTsauioy-wzT6FgXcJWZr3XOFnjqbrVwH8DYu0AngXkVeaDKGJ0Kq0R4aFT8&owner_id=2160858&album_id=profile&extended=1&photo_sizes=1&v=5.199 HTTP/1.1" 200 1259
+DEBUG:root:get photoes from vk
+DEBUG:root:загрузка 3 фото
+DEBUG:root:фото для бэкапа {'7.jpg': {'photo_url': 'https://sun9-26.vkuserphoto.ru/impf/uHLfLvEuSn8hHNNUd5POC9bKgIzFa0kQuzIdJg/sZj56Axq8Rs.jpg?size=1280x719&quality=96&sign=4eae34eeff6d11e4b5bcfe2018b997ad&c_uniq_tag=MoEm93kYnE77uE8VmeaCwvpeR9DRVNG7w-y7LXrKfPs&type=album', 'photo_type': 'z'}, '24.jpg': {'photo_url': 'https://sun9-50.vkuserphoto.ru/c11265/u2160858/-6/z_53a71f34.jpg', 'photo_type': 'z'}}
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cloud-api.yandex.net:443
+DEBUG:urllib3.connectionpool:https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=Image16 HTTP/1.1" 201 113
+DEBUG:root:create yd folder
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cloud-api.yandex.net:443
+DEBUG:urllib3.connectionpool:https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=Image16%2F7.jpg&url=https%3A%2F%2Fsun9-26.vkuserphoto.ru%2Fimpf%2FuHLfLvEuSn8hHNNUd5POC9bKgIzFa0kQuzIdJg%2FsZj56Axq8Rs.jpg%3Fsize%3D1280x719%26quality%3D96%26sign%3D4eae34eeff6d11e4b5bcfe2018b997ad%26c_uniq_tag%3DMoEm93kYnE77uE8VmeaCwvpeR9DRVNG7w-y7LXrKfPs%26type%3Dalbum HTTP/1.1" 202 156
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): cloud-api.yandex.net:443
+DEBUG:urllib3.connectionpool:https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=Image16%2F24.jpg&url=https%3A%2F%2Fsun9-50.vkuserphoto.ru%2Fc11265%2Fu2160858%2F-6%2Fz_53a71f34.jpg HTTP/1.1" 202 156
+INFO:root:finish backuping - good!
+INFO:root:start backuping!
+INFO:root:finish backuping - good!
